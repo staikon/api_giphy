@@ -47,9 +47,11 @@ time, mark, audio, video {
 
 			/* Shaping of section */
 
-#section{
-	overflow: hidden;
-	background-color: #464646;
+
+#room{
+	display: block;
+    margin: 0 auto;
+    background-repeat: repeat-x;
 }
 #menu{
 	margin-top: 20px;
@@ -62,7 +64,6 @@ time, mark, audio, video {
 #accueil{
 	padding: 10px 20px;
 	border: solid 1px;
-	margin-left: 100px;
 }
 #accueil:hover{
 	background-color: red;
@@ -73,7 +74,7 @@ time, mark, audio, video {
 #info{
 	padding: 10px 20px;
 	border: solid 1px;
-	margin-left: 700px;
+	margin-left: 960px;
 }
 #info:hover{
 	background-color: red;
@@ -116,6 +117,7 @@ time, mark, audio, video {
 #footer{
 	background-color: black;
 	width: 100%;
+	margin-top: 20px;
 }
 #item{
 	margin-left: 400px;
