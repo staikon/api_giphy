@@ -1,18 +1,41 @@
-var domready = function(){
-	var _url = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC"
+/*var domready = function(){
+    var _url = "http://api.giphy.com/v1/gifs/search?q=pingu&api_key=dc6zaTOxFJmzC"
 
-$.get(_url, function(data){
-	console.log(data);
-	console.log(data.data[0].images.downsized);
-
-
-
-	var img = data.data[0].images.downsized.url;
-	$('#gif img').attr('src', img);
-
-
-});
-
+    //je nomme les gifs
+    $.get(_url, function(data){
+        list_gif(data.data);
+    });
 }
 
-$(document).ready(domready);
+var list_gif = function(gifs){
+    for (var i = 0; i<gifs.length; i++) {
+        var _g = gifs[i];
+
+        console.log(_g)
+
+        // if _g.images doesn't exist
+        if(!_g.images) return;
+        
+        // je fait un template
+        var _tpl = [
+            '<li>',
+                //J'OUBLIE PAS DE FERMER LA BALISE
+                '<img src="' + _g.images.downsized.url + '"/>',
+            '</li>'
+        ].join('');
+
+        $('#gif ul').append(_tpl);
+    }
+}
+
+$(document).ready(domready);*/
+
+
+
+
+var arlene2 = ["url 1", "url 2", "url 3"];
+var counter = 0;
+
+$(document).ready(function(){
+
+})

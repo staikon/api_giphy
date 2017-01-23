@@ -18,6 +18,14 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+@font-face {
+  font-family:"Roboto";
+  src: url("Fonts/Roboto-Light.ttf");
+  src: url("Fonts/Roboto-Bold.ttf");
+}
+
+
+
 #img_list{
 	background-color: grey;
 	width: 100%;
@@ -33,6 +41,11 @@ time, mark, audio, video {
 #title{
 	position: relative;
 	bottom: 26px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 40px;
+	letter-spacing: 5px;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #fff;
 }
 #camera{
 	position: relative;
@@ -42,7 +55,7 @@ time, mark, audio, video {
 	width: 50px;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-right: 240px;
+	margin-right: 160px;
 }
 
 			/* Shaping of section */
@@ -51,11 +64,9 @@ time, mark, audio, video {
 #room{
 	display: block;
     margin: 0 auto;
-    background-repeat: repeat-x;
 }
 #menu{
 	margin-top: 20px;
-	margin-left: 80px;
 }
 .list_menu{
 	margin-top: 18px;
@@ -63,10 +74,12 @@ time, mark, audio, video {
 }
 #accueil{
 	padding: 10px 20px;
+	margin-left: 80px;
 	border: solid 1px;
+	font-family: 'Roboto-Bold', sans-serif;
 }
 #accueil:hover{
-	background-color: red;
+	background-color: #BBD2E1;
 	transition: .7s;
 	border-radius: 10px;
 }
@@ -75,44 +88,13 @@ time, mark, audio, video {
 	padding: 10px 20px;
 	border: solid 1px;
 	margin-left: 960px;
+	font-family: 'Roboto-Bold', sans-serif;
 }
 #info:hover{
-	background-color: red;
+	background-color: #BBD2E1;
 	transition: .7s;
 	border-radius: 10px;
 }
-
-#hi_there{
-	text-align: center;
-	color: white;
-	margin-top: 80px;
-}
-#paragraph{
-	text-align: center;
-	color: white;
-	margin-top: 50px;
-}
-#press{
-	text-align: center;
-	color: white;
-	margin-top: 50px;
-}
-#go{
-	text-align: center;
-	color: white;
-	padding: 15px 30px;
-	background-color: grey;
-	border: solid 1px;
-	margin: 40px 0px 70px 584px;
-
-}
-#go:hover{
-	background-color: #4ef;
-	border-radius: 15px;
-	transition: .9s;
-}
-
-
 
 #footer{
 	background-color: black;
@@ -128,3 +110,8 @@ time, mark, audio, video {
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
+
+
+
+
