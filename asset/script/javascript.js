@@ -28,8 +28,22 @@ var nextGif = function(){
 }
 
 var domready = function () {
-	getGifs('sexe');
+	getGifs('dev');
 }
 
 $(document).ready(domready);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
