@@ -28,7 +28,22 @@ var nextGif = function(){
 }
 
 var domready = function () {
-	getGifs('pingu');
+	getGifs('dev');
 }
 
 $(document).ready(domready);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

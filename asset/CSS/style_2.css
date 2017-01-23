@@ -99,7 +99,6 @@ time, mark, audio, video {
 #footer{
 	background-color: black;
 	width: 100%;
-	margin-top: 20px;
 }
 #item{
 	margin-left: 400px;
@@ -111,7 +110,19 @@ time, mark, audio, video {
 	margin-bottom: 40px;
 }
 
+#section{
+	background: url(../../Images/salle.png);
+	height: 530px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
-
-
+#mgm {
+	height: 202px;
+	width: 396px;
+	position: absolute;
+	top: 275px;
+	left: 460px;
+}
 
