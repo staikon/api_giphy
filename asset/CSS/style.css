@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,10 +23,15 @@ time, mark, audio, video {
   font-family:"Roboto";
   src: url("Fonts/Roboto-Light.ttf");
   src: url("Fonts/Roboto-Bold.ttf");
+=======
+img {
+	height: 200px;
+>>>>>>> devremi
 }
 
 
 
+<<<<<<< HEAD
 #img_list{
 	width: 100%;
 }
@@ -160,3 +166,50 @@ time, mark, audio, video {
 	font-family: 'Roboto-Bold', sans-serif;
 	font-size: 8px;
 }
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> devremi
