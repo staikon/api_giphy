@@ -28,7 +28,8 @@ var nextGif = function(){
 }
 
 var domready = function () {
-	getGifs('pingu');
+	getGifs('sexe');
 }
 
 $(document).ready(domready);
+
