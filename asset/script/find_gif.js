@@ -1,5 +1,5 @@
 var domready = function(){
-	var _url = "http://api.giphy.com/v1/gifs/search?q=salut&api_key=dc6zaTOxFJmzC"
+	var _url = "http://api.giphy.com/v1/gifs/search?q=pingu/offset=2&api_key=dc6zaTOxFJmzC"
 
 	//je nomme les gifs
 	$.get(_url, function(data){
