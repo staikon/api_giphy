@@ -28,7 +28,7 @@ var nextGif = function(){
 }
 
 var domready = function () {
-	getGifs('dev');
+	getGifs('pingu');
 }
 
 $(document).ready(domready);
