@@ -23,6 +23,7 @@ time, mark, audio, video {
   font-family:"Roboto";
   src: url("Fonts/Roboto-Light.ttf");
   src: url("Fonts/Roboto-Bold.ttf");
+}
 
 #img_list{
 	width: 100%;

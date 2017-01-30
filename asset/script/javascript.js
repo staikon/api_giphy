@@ -1,6 +1,7 @@
 var data, 
 	interval, 
 	counter = 0;
+var s = document.getElementById('button');
 
 var getGifs = function(query){
 	$.get('http://api.giphy.com/v1/gifs/search?q='+ query +'&api_key=dc6zaTOxFJmzC', function(res){
@@ -27,17 +28,22 @@ var nextGif = function(){
 	$('#mgm').attr('src', _gif.images.downsized.url);
 }
 
-var domready = function () {
-	getGifs('dev');
+function enter(k) {
+	if (k.keyCode === 13) {
+		domready();
+	}
 }
 
+var domready = function () {
+	c = document.getElementById('test').value;
+	res = c.replace(" ","+");
+	getGifs(c);
+}
+
+s.addEventListener("click",domready);
+document.addEventListener('keyup', enter);
+
 $(document).ready(domready);
-
-
-
-
-
-
 
 
 
