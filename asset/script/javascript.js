@@ -29,10 +29,6 @@ var nextGif = function(){
 	$('#mgm').attr('src', _gif.images.downsized.url);
 }
 
-var gifilm = function () {
-	getGifs('pingu');
-}
-
 function enter(k) {
 	if (k.keyCode === 13) {
 		gifilm();
