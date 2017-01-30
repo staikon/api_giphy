@@ -126,6 +126,7 @@
 #footer{
 	background-color: #013378;
 	width: 100%;
+
 	position: relative;
 }
 #item{
@@ -137,6 +138,7 @@
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
 #contact{
 	color: #fff;
 	position: absolute;
@@ -153,3 +155,29 @@
 	font-family: 'Roboto-Bold', sans-serif;
 	font-size: 8px;
 }
+
+#section{
+	background: url(../../Images/salle.png);
+	height: 530px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#mgm {
+	height: 202px;
+	width: 396px;
+	position: absolute;
+	top: 275px;
+	left: 460px;
+}
+
+
+
+
+
+
+
+
+
+
