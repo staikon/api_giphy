@@ -28,26 +28,26 @@ var nextGif = function(){
 	$('#mgm').attr('src', _gif.images.downsized.url);
 }
 
-var domready = function () {
+var gifilm = function () {
 	getGifs('pingu');
 }
 
 function enter(k) {
 	if (k.keyCode === 13) {
-		domready();
+		gifilm();
 	}
 }
 
-var domready = function () {
+var gifilm = function () {
 	c = document.getElementById('test').value;
 	res = c.replace(" ","+");
 	getGifs(c);
 }
 
-s.addEventListener("click",domready);
+s.addEventListener("click",gifilm);
 document.addEventListener('keyup', enter);
 
-$(document).ready(domready);
+$(document).ready(gifilm);
 
 
 
