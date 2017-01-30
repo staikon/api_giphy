@@ -156,20 +156,13 @@
 	font-size: 8px;
 }
 
-#section{
-	background: url(../../Images/salle.png);
-	height: 530px;
-	width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 
 #mgm {
-	height: 202px;
-	width: 396px;
-	position: absolute;
-	top: 275px;
-	left: 460px;
+    height: 248px;
+    width: 485px;
+    position: absolute;
+    top: 326px;
+    left: 422px;
 }
 
 
