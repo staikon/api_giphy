@@ -7,6 +7,7 @@ var getGifs = function(query){
 	$.get('http://api.giphy.com/v1/gifs/search?q='+ query +'&api_key=dc6zaTOxFJmzC', function(res){
 		data = res.data;
 
+		counter = 0;
 		clearInterval(interval);
 
 		nextGif();
