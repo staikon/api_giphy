@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="asset/CSS/animation.css">
 	<link rel="stylesheet" type="text/css" href="asset/CSS/reset.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="asset/CSS/swiper.min.css">    
 </head>
 <body>
 
@@ -31,19 +35,52 @@
 		<button id="submit">SUBMIT</button>
 	</div>
 	
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="Images/naruto.png"></div>
+            <div class="swiper-slide"><img src="Images/star wars.png"></div>
+            <div class="swiper-slide"><img src="Images/dbz.png"></div>
+            <div class="swiper-slide"><img src="Images/one piece.png"></div>
+            <div class="swiper-slide"><img src="Images/sport.png"></div>
+            <div class="swiper-slide"><img src="Images/gags.png"></div>
+            <div class="swiper-slide"><img src="Images/marvel.png"></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+	
 	<footer id="footer">
+		<p id="follow">SUIVEZ-NOUS ?</p>
+
 		<nav>
 			<ul id="item">
-				<li class="list_item"><a href="#"><img src="Images/fb.png"></a></li>
-				<li class="list_item"><a href="#"><img src="Images/linkedin.png"></a></li>
-				<li class="list_item"><a href="#"><img src="Images/twitter.png"></a></li>
+				<li class="list_item"><a href="https://www.facebook.com/"  target="_blank"><img src="Images/Facebook.png"  id="facebook"></a></li>
+				<li class="list_item"><a href="https://www.linkedin.com/"  target="_blank"><img src="Images/Linkedin.png"  id="linkedin"></a></li>
+				<li class="list_item"><a href="https://www.github.com/"    target="_blank"><img src="Images/Github.png"    id="github"></a></li>
+				<li class="list_item"><a href="https://www.instagram.com/" target="_blank"><img src="Images/Instagram.png" id="instagram"></a></li>
 			</ul>
 		</nav>
 
-		<p id="contact">NOUS CONTACTER ?</p>
 		<p id="footer_info">© 2017 www.gifilm.com | All Rights Reserved To gifilm.com | WEBSITE BY MGM</p>
 	</footer>
 
 	<script src="asset/script/javascript.js"></script>
+    <script src="asset/script/swiper.min.js"></script>
+	
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            keyboardControl: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+    </script>
 </body>
 </html>
