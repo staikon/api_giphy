@@ -14,7 +14,7 @@ var getGifs = function(query){
 		interval = setInterval(nextGif, 2000);
 	});
 };
-/*
+
 var nextGif = function(){
 	if(counter === data.length-1){
 		clearInterval(interval);
@@ -44,7 +44,7 @@ var gifilm = function () {
 s.addEventListener("click",gifilm);
 document.addEventListener('keyup', enter);
 
-$(document).ready(gifilm);*/
+//$(document).ready(gifilm);
 
 
 
@@ -90,13 +90,39 @@ $(document).ready(function(){
 
 
 
+var naruto = document.getElementById('naruto');
+var compteur = 0;
+var liens_naruto = ["https://media.giphy.com/media/hMAhEUs3fwEbC/giphy.gif",
+                    "https://media.giphy.com/media/ii8IXS5efvHoc/giphy.gif",
+                    "https://media.giphy.com/media/khSY1zJTTu9Py/giphy.gif",
+                    "https://media.giphy.com/media/JXe5usjKfuzLi/giphy.gif",
+                    "https://media.giphy.com/media/XBzKr2y8ml62Q/giphy.gif",
+                    "https://media.giphy.com/media/s9cpk9XyM9f4k/giphy.gif",
+                    "https://media.giphy.com/media/o2xt2tGDKrf2w/giphy.gif"];
 
+function nexNar(){
+    // counter 
+    // src > img suivante counter +1 
+    console.log('Le compteur est à:', compteur);
+    compteur++   
+    $('#mgm').attr('src', liens_naruto[compteur]);
 
+    if (compteur === liens_naruto.length) {
+        compteur = 0;
+        console.log('I have rebegin');
+    }
+};
 
-
-
-
-
-
-
-
+function newDoc() {
+    console.log('salut');
+    interval = setInterval(nexNar, 4000);
+    $('html, body').animate({scrollTop:0}, 'slow');
+    $('#mgm').attr('src', liens_naruto[0]);
+    
+};
+function player(){
+    var audio = document.getElementById("audio");
+    audio.play();
+                 }
+naruto.addEventListener('click', newDoc);
+naruto.addEventListener('click', player);

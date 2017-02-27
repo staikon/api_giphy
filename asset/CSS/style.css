@@ -145,3 +145,10 @@
     font-family: 'Roboto-Bold', sans-serif;
     font-size: 12px;
 }
+#mgm{
+    top: 326px;
+    left: 422px;
+    width: 485px;
+    height: 248px;
+	position: absolute;
+}
