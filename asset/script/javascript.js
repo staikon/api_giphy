@@ -1,32 +1,58 @@
 var data, 
 	interval, 
-	counter = 0;
+	isPlaying = false,
+	counter_gif = 0;
+
 var s = document.getElementById('submit');
+var stopBtn = document.getElementById('mgm');
 
 var getGifs = function(query){
 	$.get('http://api.giphy.com/v1/gifs/search?q='+ query +'&api_key=dc6zaTOxFJmzC', function(res){
 		data = res.data;
+		console.log(data);
 
-		counter = 0;
+		isPlaying = true;
+
+		counter_gif = 0;
 		clearInterval(interval);
+
 
 		nextGif();
 		interval = setInterval(nextGif, 2000);
+
 	});
 };
 
-var nextGif = function(){
-	if(counter === data.length-1){
+function nextGif(){
+	if(counter_gif === data.length-1){
 		clearInterval(interval);
 		return;
 	}	
 
-	var _gif = data[counter];
-	counter++;
+	var _gif = data[counter_gif];
+	counter_gif++;
 
-	console.log(_gif.images.downsized.url);
+	console.log(counter_gif);
 
 	$('#mgm').attr('src', _gif.images.downsized.url);
+}
+
+
+
+
+function playPause(){
+
+	if (isPlaying == true){
+		clearInterval(interval);
+		isPlaying = false;
+	}
+	else {
+		isPlaying = true;
+		clearInterval(interval);
+		interval = setInterval(nextGif, 2000);
+
+	}
+
 }
 
 function enter(k) {
@@ -35,12 +61,13 @@ function enter(k) {
 	}
 }
 
-var gifilm = function () {
+function gifilm() {
 	c = document.getElementById('input').value;
 	res = c.replace(" ","+");
 	getGifs(c);
 }
 
+stopBtn.addEventListener("click", playPause);
 s.addEventListener("click",gifilm);
 document.addEventListener('keyup', enter);
 
@@ -77,9 +104,6 @@ $(document).ready(function(){
         $('#twitter').attr('src', 'Images/twitter.png');
     });
 })
-
-
-
 
 
 
