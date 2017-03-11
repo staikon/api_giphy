@@ -23,6 +23,7 @@ var getGifs = function(query){
 	});
 };
 
+
 function nextGif(){
 	if(counter_gif === data.length-1){
 		clearInterval(interval);
@@ -78,30 +79,40 @@ $(document).ready(gifilm);
 
 $(document).ready(function(){
         $('#facebook').mouseover(function(){
-        $('#facebook').attr('src', 'Images/fb_replace.png');
+        $('#facebook').attr('src', './Images/Facebook_replace.png');
     });
         $('#facebook').mouseout(function(){
-        $('#facebook').attr('src', 'Images/fb.png');
+        $('#facebook').attr('src', './Images/Facebook.png');
     });
 });
 
 $(document).ready(function(){
         $('#linkedin').mouseover(function(){
-        $('#linkedin').attr('src', 'Images/linkedin_replace.png');
+        $('#linkedin').attr('src', './Images/Linkedin_replace.png');
     });
 
         $('#linkedin').mouseout(function(){
-        $('#linkedin').attr('src', 'Images/linkedin.png');
+        $('#linkedin').attr('src', './Images/Linkedin.png');
     });
 })
 
 $(document).ready(function(){
-        $('#twitter').mouseover(function(){
-        $('#twitter').attr('src', 'Images/twitter_replace.png');
+        $('#github').mouseover(function(){
+        $('#github').attr('src', './Images/Github_replace.png');
     });
 
-        $('#twitter').mouseout(function(){
-        $('#twitter').attr('src', 'Images/twitter.png');
+        $('#github').mouseout(function(){
+        $('#github').attr('src', './Images/Github.png');
+    });
+})
+
+$(document).ready(function(){
+        $('#instagram').mouseover(function(){
+        $('#instagram').attr('src', './Images/Instagram_replace.png');
+    });
+
+        $('#instagram').mouseout(function(){
+        $('#instagram').attr('src', './Images/Instagram.png');
     });
 })
 
