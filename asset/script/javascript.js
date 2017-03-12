@@ -41,7 +41,7 @@ var gifilm = function () {
 	getGifs(c);
 }
 
-s.addEventListener("click",gifilm);
+s.addEventListener("click", gifilm);
 document.addEventListener('keyup', enter);
 
 //$(document).ready(gifilm);
@@ -160,12 +160,12 @@ function manga_starwars() {
     $('#mgm').attr('src', liens_stars_wars[0]);
     
 };
-function player(){
+function player2(){
     var audio = document.getElementById("audio2");
     audio.play();
-                 }
+}
 star.addEventListener('click', manga_starwars);
-star.addEventListener('click', player); 
+star.addEventListener('click', player2); 
 
 
                /* CODE TO PLAY GIF WHEN YOU CLICK ON DBZ */
@@ -201,12 +201,14 @@ function manga_dbz() {
     $('#mgm').attr('src', liens_dbz[0]);
     
 };
-function player(){
+
+function player3(){
     var audio = document.getElementById("audio3");
     audio.play();
 }
+
 dragon.addEventListener('click', manga_dbz);
-dragon.addEventListener('click', player); 
+dragon.addEventListener('click', player3); 
 
 
                               /* CODE TO PLAY GIF WHEN YOU CLICK ON SPORT */
@@ -244,10 +246,7 @@ function manga_sport() {
     $('#mgm').attr('src', liens_sport[0]);
     
 };
-function player(){
-    var audio = document.getElementById("audio3");
-    audio.play();
-}
+
 sport.addEventListener('click', manga_sport);
 sport.addEventListener('click', player); 
 
@@ -282,10 +281,7 @@ function manga_gags() {
     $('#mgm').attr('src', liens_gags[0]);
     
 };
-function player(){
-    var audio = document.getElementById("audio3");
-    audio.play();
-}
+
 gags.addEventListener('click', manga_gags);
 gags.addEventListener('click', player); 
 
@@ -322,9 +318,11 @@ function manga_marvel() {
     $('#mgm').attr('src', liens_marvel[0]);
     
 };
-function player(){
-    var audio = document.getElementById("audio3");
+
+function player4(){
+    var audio = document.getElementById("audio4");
     audio.play();
 }
+
 marvel.addEventListener('click', manga_marvel);
-marvel.addEventListener('click', player); 
+marvel.addEventListener('click', player4); 
