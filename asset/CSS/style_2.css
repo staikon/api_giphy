@@ -95,7 +95,7 @@
 }
 
 #form{
-    position: absolute;
+    position: fixed;
     top: 18%;
     left: 38%;
     display: inline-block;
@@ -166,10 +166,10 @@
 }
 #mgm{
     top: 212px;
-    left: 422px;
+    left: 412px;
     width: 485px;
     height: 248px;
-	position: absolute;
+	position: fixed;
 }
 
 .swiper-container {
